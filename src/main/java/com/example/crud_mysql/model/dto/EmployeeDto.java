@@ -17,7 +17,7 @@ public class EmployeeDto {
     private Double salary;
 
     //convert Entity to Dto
-    public EmployeeDto convertEntityToDto(Employee employee){
+    public static EmployeeDto convertEntityToDto(Employee employee){
         return EmployeeDto.builder()
                 .id(employee.getId())
                 .firstname(employee.getFirstName())
